@@ -1,0 +1,454 @@
+* {
+    background-color: #C8B595;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body, html {
+    overflow-x:hidden ;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h1, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+.poga {
+    color: #C8B595;
+}
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #402C0D;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+@media (max-width: 425px) {
+    * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#4E3316;
+    }
+    header {
+        display: flex;
+        background-color: #3F2A0E;
+    }
+    .container {
+        background-color: #3F2A0E;
+    }
+    .nombre {
+        font-size: 2rem;
+        letter-spacing: 5.1px;
+        margin-top: -1rem;
+        background-color: #3F2A0E;
+        text-align: center;
+        animation: rainbow 5s infinite linear;
+    }
+
+
+@keyframes rainbow {
+    0% { color: #B87D3E; }   
+    16% { color: #C8B595 ; }   
+    80% { color:  white ; }  
+    100% { color: #B87D3E; } 
+}
+    .poga {
+        margin-top: 0px;
+        font-size: 1.5rem;
+        background-color:#3F2A0E;
+
+    }
+
+    section {
+        max-width: 21rem; /* Límite máximo */
+        background-color: #3F2A0E;
+        margin: 1rem auto;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    section h3 {
+        background-color: #3F2A0E;
+        text-align: center;
+        font-size: 1.5rem;
+        animation: rainbow 5s infinite linear;
+    }
+    #propuestas {
+        list-style: none;
+        font-size: 1.5rem;
+        margin-left: -10px;
+        background-color: #B87D3E;
+    }
+
+    section ul {
+        background-color: #B87D3E;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 10px;
+        color: white;
+    }
+    section li {
+        background-color: #B87D3E;
+        border-radius: 10px;
+    }
+    #somos{
+        background-color: #B87D3E;
+        color: #3F2A0E;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #nombre1 {
+        background-color: #B87D3E;
+        animation: rainbow 5s infinite linear;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+        margin-left:-20px;
+        text-align: center;
+    }
+    #je {
+        color: #3F2A0E;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #B87D3E;
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    footer {
+        position: sticky; 
+        margin-top: 2rem;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: wheat;
+        text-align: center;
+        padding: 10px;
+        height: 3.5rem;
+        background-color: #3F2A0E;
+    }
+    #seguinos {
+        color: #C8B595;
+        font-weight:bold ;
+        background-color: #3F2A0E;
+        font-size: 0.9rem;
+        margin: 0;
+        margin-top: 0px;
+        margin-left: -8rem;
+
+    }
+    .imagenes {
+        display: flex;
+        background-color: #3F2A0E;
+        gap: 10px;
+    }
+    .tiktok, .instagram {
+        display: block;
+        margin-top: 0rem;
+        width: 45px;
+        background-color: #3F2A0E;
+    }
+    .conteiner {
+        display: flex;
+        width: min-content;
+        margin-left: 75%;
+        margin-top: -1.5rem;
+    }
+    .dudas {
+        color: #C8B595;
+        background-color: #3F2A0E;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: -4.1rem;
+        margin-top: 4rem;
+    }
+}   
+@media (max-width: 375px) {
+    .nombre {
+        font-size: 1.7rem;
+    }
+    #seguinos {
+        margin-left: -0.6rem;
+        font-size: 86.3%;
+        z-index: 10;
+        max-width: fit-content;
+    }
+    .dudas {
+        margin-left: -1.9rem;
+    }
+
+}
+
+@media (max-width: 320px){
+    .nombre {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    section {
+        width: 18rem;
+    }
+    section ul {
+        border-radius: 0px;
+    }
+    footer {
+        height: 4.5rem;
+    }
+    #seguinos {
+        font-size: 70%;
+    }
+    .tiktok, .instagram {
+        margin-top: 1px;
+        width: 38px;
+        background-color: #3F2A0E;
+    }
+}
+@media (min-width: 1024px) {
+
+    header {
+        background-color: #3F2A0E;
+        padding: 0px;
+        height: auto;
+    }
+    .poga {
+        margin: 0 0;
+        margin-top: 0px;
+        background-color: #3F2A0E;
+        width: 100%;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .nombre {
+        background-color: #3F2A0E;
+        margin-top: -1.5%;
+        text-align: center;
+        font-size: 6.5rem;
+        animation: rainbow 4s infinite linear;
+
+    }
+    @keyframes rainbow {
+        0% { color: #B87D3E; }   
+        16% { color: #C8B595 ; }   
+        80% { color:  white ; }  
+        100% { color: #B87D3E; } 
+    }
+    section {
+        max-width: 90%;
+        background-color: #3F2A0E;
+        margin: 3rem;
+        margin-top: -1rem;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    section h3 {
+        padding: 0;
+        background-color: #3F2A0E;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+        animation: rainbow 5s infinite linear;
+
+    }
+    
+    #propuestas {
+        color: #3F2A0E;
+        list-style: none;
+        font-size: 1.5rem;
+        margin-left: -5px;
+        margin-bottom: 5px;
+        background-color: #B87D3E;
+    }
+
+    section ul {
+        background-color: #B87D3E;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 10px;
+        color: white;
+    }
+    section li {
+        background-color: #B87D3E;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        color: #4E3316;
+    }
+    #somos{
+        background-color: #B87D3E;
+        color: #3F2A0E;
+        margin-top: 0;
+        margin-bottom: -15px;
+        font-size: 1.5rem;
+    }
+    #nombre1 {
+        background-color: #B87D3E;
+        animation: rainbow 5s infinite linear;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 2rem;
+        margin-left:rem;
+        width: max-content;
+        text-align: center;
+
+    }
+    #je {
+        color: #3F2A0E;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0;
+        background-color: #B87D3E;
+        font-size: 1.7rem;
+        font-weight: bolder;
+    }
+
+    footer {
+        position: sticky; 
+        margin-top: 2rem;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: wheat;
+        text-align: center;
+        padding: 10px;
+        height: 6.1rem;
+        background-color: #3F2A0E;
+    }
+    #seguinos {
+        color: #C8B595;
+        font-weight:bold ;
+        background-color: #3F2A0E;
+        font-size: 2rem;
+        margin: 0;
+        margin-top: 0px;
+        margin-left: -23rem;
+
+    }
+    .imagenes {
+        display: flex;
+        background-color: #3F2A0E;
+        
+    }
+    .tiktok, .instagram {
+        display: block;
+        margin-top: -1rem;
+        width: 70px;
+        background-color: #3F2A0E;
+    }
+    .conteiner {
+        display: flex;
+        width: min-content;
+        margin-left: 68%;
+        margin-top: -2rem;
+    }
+    .dudas {
+        color: #C8B595;
+        background-color: #3F2A0E;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: -19.5rem;
+    }
+    @keyframes zoom {
+        0%, 100% {
+            transform: scale(0.8);
+        }
+        50% {
+            transform: scale(1);
+        }
+    }
+}   
+@media (min-width: 1366px) {
+    .poga {
+        
+    }
+    .nombre {
+        margin-top: 0;
+        font-size: 6.2rem;
+    }
+    section {
+        border: 10px solid black;
+        width: 43rem;
+    }
+    section ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #proponemos {
+        margin-top: -20.9%;
+        margin-left: 48% ;
+        height: 42rem;
+        width: 50rem;
+    }
+    #elegirnos {
+        margin-top: -24rem;
+    }
+    footer {
+        position: sticky; 
+        margin-top: 2rem;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: wheat;
+        text-align: center;
+        padding: 0;
+        height: 11.2rem;
+        background-color: #3F2A0E;
+    }
+    #seguinos {
+        color: #C8B595;
+        font-weight:bold ;
+        background-color: #3F2A0E;
+        font-size: 3rem;
+        margin-top: 10rem;
+        margin-left: -39.5rem;
+
+    }
+    .imagenes {
+        display: flex;
+        background-color: #3F2A0E;
+        
+    }
+    .tiktok, .instagram {
+        display: block;
+        margin-top: -1.1.0rem;
+        width: 100px;
+        background-color: #3F2A0E;
+    }
+    .conteiner {
+        display: flex;
+        margin-left: 90rem;
+    }
+    .dudas {
+        color: #C8B595;
+        background-color: #3F2A0E;
+        width: 100%;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-right: 15rem;
+        margin-bottom: 0%;
+        text-decoration-color: #D88C56;
+
+    }
+    
+    
+}
+
